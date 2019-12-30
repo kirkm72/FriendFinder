@@ -1,7 +1,7 @@
-var friends = [
+const friends = [
   {
     name: "Whitey Bulger",
-    photo: "/public/img/bulger.jpg",
+    photo: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi0.heartyhosting.com%2Fradaronline.com%2Fwp-content%2Fuploads%2F2016%2F02%2Fwhitey-bulger-johnny-depp-black-mass-pure-fiction-pp.jpg%3Fresize%3D640%252C420%26ssl%3D1&imgrefurl=https%3A%2F%2Fradaronline.com%2Fexclusives%2F2016%2F02%2Fwhitey-bulger-johnny-depp-black-mass-pure-fiction%2F&tbnid=clnbpP2hJLVx6M&vet=12ahUKEwjCn52suN7mAhWVY60KHa_6AEUQMygvegUIARCTAQ..i&docid=MCYJwTJ5u_2xYM&w=640&h=420&q=whitey%20bulger&ved=2ahUKEwjCn52suN7mAhWVY60KHa_6AEUQMygvegUIARCTAQ",
     scores: [
       "5",
       "1",
@@ -17,7 +17,7 @@ var friends = [
   },
   {
     name: "Joaquin Guzman",
-    photo: "/public/img/chapo.jpg",
+    photo: "https://i.guim.co.uk/img/media/a6a6c237e5ec81cfacc3ba2f610008610d24781b/0_360_1200_719/master/1200.jpg?width=300&quality=85&auto=format&fit=max&s=4ff8965ab757b594911c3d2cfffbc468",
     scores: [
       "4",
       "2",
@@ -33,7 +33,7 @@ var friends = [
   },
   {
     name: "Dwight Schrute",
-    photo: "/public/img/Dwight.jpg",
+    photo: "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Dwight_Schrute.jpg/220px-Dwight_Schrute.jpg",
     scores: [
       "5",
       "2",
@@ -49,7 +49,7 @@ var friends = [
   },
   {
     name: "Bill Lumbergh",
-    photo: "/public/img/Lumbergh.jpg",
+    photo: "https://abovethelaw.com/wp-content/uploads/2017/08/Lumbergh-Office-Space.jpg",
     scores: [
       "3",
       "3",
@@ -65,7 +65,7 @@ var friends = [
   },
   {
     name: "John Wayne",
-    photo: "/public/img/JohnWayne.jpg",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/John_wayne_challenge_of_ideas_screenshot_2.jpg/220px-John_wayne_challenge_of_ideas_screenshot_2.jpg",
     scores: [
       "4",
       "3",
@@ -81,7 +81,7 @@ var friends = [
   },
   {
     name: "Gordon Gekko",
-    photo: "/public/img/Gekko.jpg",
+    photo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Gordon_Gekko.jpg/220px-Gordon_Gekko.jpg",
     scores: [
       "4",
       "4",
@@ -97,6 +97,4 @@ var friends = [
   }
 
 ];
-
-// Here we export the array. This makes it accessible to other files using require.
 module.exports = friends;
