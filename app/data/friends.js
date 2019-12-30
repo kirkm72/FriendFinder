@@ -1,7 +1,7 @@
 const friends = [
   {
     name: "Whitey Bulger",
-    photo: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi0.heartyhosting.com%2Fradaronline.com%2Fwp-content%2Fuploads%2F2016%2F02%2Fwhitey-bulger-johnny-depp-black-mass-pure-fiction-pp.jpg%3Fresize%3D640%252C420%26ssl%3D1&imgrefurl=https%3A%2F%2Fradaronline.com%2Fexclusives%2F2016%2F02%2Fwhitey-bulger-johnny-depp-black-mass-pure-fiction%2F&tbnid=clnbpP2hJLVx6M&vet=12ahUKEwjCn52suN7mAhWVY60KHa_6AEUQMygvegUIARCTAQ..i&docid=MCYJwTJ5u_2xYM&w=640&h=420&q=whitey%20bulger&ved=2ahUKEwjCn52suN7mAhWVY60KHa_6AEUQMygvegUIARCTAQ",
+    photo: "https://i0.heartyhosting.com/radaronline.com/wp-content/uploads/2016/02/whitey-bulger-johnny-depp-black-mass-pure-fiction-pp.jpg?resize=640%2C420&ssl=1",
     scores: [
       "5",
       "1",
