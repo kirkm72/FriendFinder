@@ -3,13 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>Celeb Match</title>
 
   <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
 
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
@@ -20,148 +34,152 @@
 <body>
 
   <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class='text-center'>
+          <h3><strong>Celeb Match Questionnaire</strong></h3>
+        </div>
 
-    <h2>Questionnaire</h2>
-    <hr>
+        <h5>Your Name (Required)</h5>
+        <input type="text" id="name" class="form-control" required>
 
-    <h3><strong>Info about you.</strong></h3>
-    <h4>Name (Required)</h4>
-    <input type="text" id="name" class="form-control" required>
+        <h5>Link to your Image (Required)</h5>
+        <input type="text" id="photo" class="form-control" required>
 
-    <h4>Link to Image (Required)</h4>
-    <input type="text" id="photo" class="form-control" required>
+        <div class='row' id='row1'>
+          <div class='col-md-5'>
+            <h6>Are you an introvert?</h6>
+            <select class="chosen-select" id="q1">
+              <option value=""></option>
+              <option value="1">Strongly Disagree</option>
+              <option value="2">Disagree</option>
+              <option value="3">No opinion</option>
+              <option value="4">Agree</option>
+              <option value="5">Strongly Agree</option>
+            </select>
+          </div>
 
-    <hr>
+          <div class=col-md-3>
+            <h6>Do you like pets?</h6>
+            <select class="chosen-select" id="q2">
+              <option value=""></option>
+              <option value="1">Strongly Disagree</option>
+              <option value="2">Disagree</option>
+              <option value="3">No opinion</option>
+              <option value="4">Agree</option>
+              <option value="5">Strongly Agree</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <br>
 
-    <h3><strong>Question 1</strong></h3>
-    <h4>Are you an introvert?</h4>
-    <select class="chosen-select" id="q1">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
+        <h6>Are you a cat person?</h6>
+        <select class="chosen-select" id="q3">
+          <option value=""></option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">No opinion</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+        <br>
+        <br>
 
-    <h3><strong>Question 2</strong></h3>
-    <h4>Do you like pets?</h4>
-    <select class="chosen-select" id="q2">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
+        <h6>Do you like outdoor activities?</h6>
+        <select class="chosen-select" id="q4">
+          <option value=""></option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">No opinion</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+        <br>
+        <br>
 
+        <h6>Do you like to follow politics?</h6>
+        <select class="chosen-select" id="q5">
+          <option value=""></option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">No opinion</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+        <br>
+        <br>
 
-    <h3><strong>Question 3</strong></h3>
-    <h4>Are you a cat person?</h4>
-    <select class="chosen-select" id="q3">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
+        <h6>Do you drink alcohol frequently?</h6>
+        <select class="chosen-select" id="q6">
+          <option value=""></option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">No opinion</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+        <br>
+        <br>
 
+        <h6>Are you entrepreneurial?</h6>
+        <select class="chosen-select" id="q7">
+          <option value=""></option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">No opinion</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+        <br>
+        <br>
 
-    <h3><strong>Question 4</strong></h3>
-    <h4>Do you like outdoor activities?</h4>
-    <select class="chosen-select" id="q4">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
+        <h6>Are you physically active?</h6>
+        <select class="chosen-select" id="q8">
+          <option value=""></option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">No opinion</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+        <br>
+        <br>
 
+        <h6>Do you like the Dallas Cowboys?</h6>
+        <select class="chosen-select" id="q9">
+          <option value=""></option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">No opinion</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+        <br>
+        <br>
 
-    <h3><strong>Question 5</strong></h3>
-    <h4>Do you like to follow politics?</h4>
-    <select class="chosen-select" id="q5">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
+        <h6>Do you like the New England Patriots?</h6>
+        <select class="chosen-select" id="q10">
+          <option value=""></option>
+          <option value="1">Strongly Disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">No opinion</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly Agree</option>
+        </select>
+        <br>
+        <br>
 
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
 
-    <h3><strong>Question 6</strong></h3>
-    <h4>Do you drink alcohol frequently?</h4>
-    <select class="chosen-select" id="q6">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
-
-
-    <h3><strong>Question 7</strong></h3>
-    <h4>Do you consider yourself to be entrepreneurial?</h4>
-    <select class="chosen-select" id="q7">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
-
-    <h3><strong>Question 8</strong></h3>
-    <h4>Do you consider yourself to be physically active?</h4>
-    <select class="chosen-select" id="q8">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
-
-    <h3><strong>Question 9</strong></h3>
-    <h4>Do you like the Dallas Cowboys?</h4>
-    <select class="chosen-select" id="q9">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
-
-    <h3><strong>Question 10</strong></h3>
-    <h4>Do you dislike the New England Patriots?</h4>
-    <select class="chosen-select" id="q10">
-      <option value=""></option>
-      <option value="1">Strongly Disagree</option>
-      <option value="2">Disagree</option>
-      <option value="3">No opinion</option>
-      <option value="4">Agree</option>
-      <option value="5">Strongly Agree</option>
-    </select>
-
-    <br>
-    <br>
-
-    <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
-
-    <hr>
-    <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">Celebrity JSON</a></p>
+        <hr>
+        <footer class="footer">
+          <div class="container">
+            <p><a href="/api/friends">Celebrity JSON</a></p>
+          </div>
+        </footer>
       </div>
-    </footer>
-
+    </div>
   </div>
 
   <!-- Modal -->
@@ -176,7 +194,8 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <!-- <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt=""> -->
+          <img id="match-img" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Curlydisorder.jpg" alt="">
         </div>
         <div class="modal-footer">
           <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -209,19 +228,19 @@
     }
 
     // Capture the form inputs
-    $("#submit").on("click", function(event) {
+    $("#submit").on("click", function (event) {
       event.preventDefault();
 
-      
+
       function validateForm() {
         let isValid = true;
-        $(".form-control").each(function() {
+        $(".form-control").each(function () {
           if ($(this).val() === "") { // Make sure each question is answered
             isValid = false;
           }
         });
 
-        $(".chosen-select").each(function() {
+        $(".chosen-select").each(function () {
 
           if ($(this).val() === "") { // Make sure each question is answered
             isValid = false;
@@ -230,9 +249,9 @@
         return isValid;
       }
 
-      
+
       if (validateForm()) { // true if all Q's answered
-        
+
         let userData = { // creates user JSON of answers
           name: $("#name").val(),
           photo: $("#photo").val(),
@@ -251,7 +270,7 @@
         };
 
         // AJAX post the data to the friends API.
-        $.post("/api/friends", userData, function(data) {
+        $.post("/api/friends", userData, function (data) {
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
